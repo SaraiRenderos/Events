@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?okhrzb');
+    src:  url('fonts/icomoon.eot?okhrzb#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?okhrzb') format('truetype'),
+      url('fonts/icomoon.woff?okhrzb') format('woff'),
+      url('fonts/icomoon.svg?okhrzb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-clock:before {
+    content: "\e94e";
+  }
+  .icon-calendar:before {
+    content: "\e953";
+  }
+  .icon-circle-right:before {
+    content: "\ea42";
+  }
+  
+body{
+    margin: 0;
+    background: #b1b2b942; 
+    font-family: 'sans-serif';
+}
+
+.events{
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+   /* width: 1000px;*/
+   /* border: 2px solid red ;*/
+    display: block;
+}
+.events__data{
+    display: flex;
+    padding: 3%;
+    justify-content: center;
+}
+.events__first:hover, .events__second:hover{
+color: white;
+background: #0d6da0;
+border: 3px solid white;
+transform: scale(0.99)
+
+}  
+.events__firstData, .events__secondData{
+    
+    font-size: 30px;
+    background: #0d6da0;
+    color: white;
+    padding: 15px 15px 0 15px;
+    height: 60px;
+    
+
+}
+.events__firstData p,.events__secondData p{
+    font-size: 10px;
+    margin: 0;
+}
+.events__first,.events__second {
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    margin-left: 1%;
+    width: 800px;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.events__firstHour,.events__secondHour{
+    display: flex;
+    align-items: center;
+
+}
+.events__firstHour i, .events__secondHour i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.events__firstHour label, .events__secondHour label{
+    font-size: 10px;
+}
+.events__firstHour p,.events__secondHour p{
+    font-size: 12px;
+    font-weight: bold;
+}
+.events__firstHour,.events__secondHour{
+    padding-right: 40px;
+    border-left : 2px solid black;
+    border-right : 2px solid black;
+    padding-left: 40px;
+}
+.icon-circle-right{
+    position: relative;
+    font-size: 35px;
+    z-index: 3;
+    right: 0;
+    left: 4%;
+    top: 0;
+    bottom: 0;
+    background: #d40707;
+    color: white;
+    border-radius: 50% 50%;
+
+}
+.events__firstTitle{
+margin-right: 104px;
+}
+.events__Detail{
+    font-size: 10px;
+}
+#Iconsecond{
+    position: relative;
+    font-size: 35px;
+    z-index: 3;
+    right: 0;
+    left: 6%;
+    top: 0;
+    bottom: 0;
+    background: #d40707;
+    color: white;
+    border-radius: 50% 50%;
+}
+.events_button{
+    text-decoration: none;
+    background: #d40707;
+    color: white;
+    padding: 15px;
+}
+.events_button img{
+    width: 20px;
+    color: white;
+
+}
+.events_button:hover {
+    transform: scale(0.99);
+    background: #e40707;
+    border : 3px solid white;
+
+} 
+
+@media (max-width: 700px) {
+    .events__data{
+        display: block;
+        margin-bottom: 15px;
+    }
+    .events__firstData, .events__secondData{
+        text-align: -webkit-auto;
+        font-size: 25px;
+        height: 40px;
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .events__firstData p, .events__secondData p{
+        margin-left: 5px;
+    }
+    .events__first, .events__second{
+        display: block;
+        max-width: 100%;
+        margin: 0;
+    }
+    .events__firstTitle{
+        margin: 0;
+    }
+    .events__firstHour, .events__secondHour{
+        border: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .events__firstHour label, .events__secondHour label{
+        display: contents;
+    font-size: 12px;
+    }
+    .icon-circle-right {
+        left: 47%;
+    top: -177px;
+    font-size: 40px;
+
+    }
+    #Iconsecond{
+        font-size: 40px;
+
+        left: 47%;
+        top: -195px;
+    }
+    .events__firstTitle, .events__secondTitle{
+        font-size: 20px;
+    }
+    .events__Detail {
+        font-size: 15px;
+    }
+  }
