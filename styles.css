@@ -44,8 +44,6 @@ body{
     max-width: 100%;
     text-align: center;
     margin: 0;
-   /* width: 1000px;*/
-   /* border: 2px solid red ;*/
     display: block;
 }
 .events__data{
@@ -159,6 +157,11 @@ margin-right: 104px;
 
 } 
 
+@media (max-width: 785px) {
+    #Iconsecond {
+        left: 4%;
+    }
+}
 @media (max-width: 700px) {
     .events__data{
         display: block;
@@ -212,12 +215,9 @@ margin-right: 104px;
         font-size: 15px;
     }
   }
-  @media (max-width: 690px) {
-    #Iconsecond{
-        left: 46%;
-    } 
-    .icon-circle-right {
-        left: 46%;
-
-    }
+  @media (max-width: 600px) {
+    #Iconsecond, .icon-circle-right {
+        left: 44%;  
+   }
+   
   }
