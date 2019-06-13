@@ -212,3 +212,12 @@ margin-right: 104px;
         font-size: 15px;
     }
   }
+  @media (max-width: 690px) {
+    #Iconsecond{
+        left: 46%;
+    } 
+    .icon-circle-right {
+        left: 46%;
+
+    }
+  }
